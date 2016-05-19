@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="lib/ion-place-autocomplete/ion-place-autocomplete.css">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/angular-animate/angular-animate.js"></script>
+    <script src="lib/angular-sanitize/angular-sanitize.js"></script>
+    <script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="lib/angular-messages/angular-messages.js"></script>
+    <!--<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-messages.js"></script>-->
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="lib/ngCordova/dist/ng-cordova.js"></script>
+    <script src="cordova.js"></script>
+
+    <!--Libraries-->
+    <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrI6myTKLyjQGwPJmD_5H9txcW84GUVHg&libraries=places"></script>
+    <script src="lib/ion-place-autocomplete/ion-place-autocomplete.js"></script>
+
+    <!-- Module -->
+    <script src="js/main/module/app.js"></script>
+
+    <!-- Directives -->
+    <script src="js/main/directives/groupedRadio.js"></script>
+    <script src="js/main/directives/autoComplete.js"></script>
+
+    <!--Controllers-->
+    <script src="js/main/controllers/AppController.js"></script>
+    <script src="js/registration/controllers/RegistrationController.js"></script>
+    <script src="js/authentication/controllers/LoginController.js"></script>
+    <script src="js/authentication/controllers/ForgetController.js"></script>
+    <script src="js/authentication/controllers/SignUpController.js"></script>
+
+     <!-- Services-->
+    <script src="js/registration/services/RegistrationService.js"></script>
+    <script src="js/authentication/services/AuthenticationService.js"></script>
+
+  </head>
+
+  <body ng-app="skApp">
+    <ion-nav-view></ion-nav-view>
+  </body>
+</html>
